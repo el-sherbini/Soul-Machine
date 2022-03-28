@@ -1,0 +1,561 @@
+<%- include('partials/header'); -%>
+
+<!-- Start settings box-->
+<div class="settings-box">
+  <div class="toggle-settings"><i class="fa fa-gear"></i></div>
+  <ul class="colors-list">
+    <li class="active" data-color="#45b3e0"></li>
+    <li data-color="#9AD79E"></li>
+    <li data-color="#45E0C0"></li>
+    <li data-color="#E04565"></li>
+    <li data-color="#E357BA"></li>
+  </ul>
+  <hr>
+  <i class="fas fa-moon" onclick="darkMode()" title="Dark Mode"></i>
+  <a href="/logout" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+</div>
+<!-- End settings box-->
+
+<!-- Start nav bullets-->
+<div class="nav-bullets">
+  <div class="bullet" data-section=".about-us">
+    <div class="tooltip">About Us</div>
+  </div>
+  <div class="bullet" data-section=".skills">
+    <div class="tooltip">Our Skills</div>
+  </div>
+  <div class="bullet" data-section=".gallery">
+    <div class="tooltip">Our Gallery</div>
+  </div>
+  <div class="bullet" data-section=".timeline">
+    <div class="tooltip">Timeline</div>
+  </div>
+  <div class="bullet" data-section=".features">
+    <div class="tooltip">Features</div>
+  </div>
+  <div class="bullet" data-section=".testimonials">
+    <div class="tooltip">Testimonials</div>
+  </div>
+  <div class="bullet" data-section=".contact">
+    <div class="tooltip">Contact Us</div>
+  </div>
+</div>
+<!-- End nav bullets-->
+
+<!-- Start landing page-->
+<div class="landing-page">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="header-area">
+      <div class="logo"><span>Soul</span> Machine</div>
+      <div class="links-container">
+        <ul class="links">
+          <li data-section=".about-us">
+            <a href="#" data-section=".about-us">About</a>
+          </li>
+          <li data-section=".skills">
+            <a href="#" data-section=".skills">Skills</a>
+          </li>
+          <li data-section=".gallery">
+            <a href="#" data-section=".gallery">Gallery</a>
+          </li>
+          <li data-section=".timeline">
+            <a href="#" data-section=".timeline">Timeline</a>
+          </li>
+          <li data-section=".features">
+            <a href="#" data-section=".features">Features</a>
+          </li>
+          <li data-section=".testimonials">
+            <a href="#" data-section=".testimonials">Tetimonials</a>
+          </li>
+          <li data-section=".contact">
+            <a href="#" data-section=".contact">Contact</a>
+          </li>
+
+        </ul>
+        <button class="toggle-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="introduction-text">
+      <h1>It's all about <span>yourself</span></h1>
+      <p>
+        You only live once, but if you do it right, once is enough
+      </p>
+    </div>
+  </div>
+</div>
+<!-- End landing page-->
+
+<!-- Start about us-->
+<div class="container">
+  <div class="about-us">
+    <div class="info-box">
+      <h2>About Us</h2>
+      <p>Soul Machine is created to try to help depressed people.</p>
+      <p>If you feel sad, please take a look to the website.</p>
+    </div>
+    <div class="image-box"><img src="/imgs/aboutUs.png" /></div>
+  </div>
+</div>
+<!-- End about us-->
+
+<!-- Start our skills-->
+<div class="skills">
+  <div class="container">
+    <h2>Rule of happiness</h2>
+    <div class="skill-box">
+      <div class="skill-name">50% of our happiness is determined by our genetics</div>
+      <div class="skill-progress"><span data-progress="50%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">10% of our happiness is determined by our circumstances</div>
+      <div class="skill-progress"><span data-progress="10%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">40% of our happiness is determined by our internal state of mind</div>
+      <div class="skill-progress"><span data-progress="40%"></span></div>
+    </div>
+  </div>
+</div>
+<!-- End our skills-->
+
+<!-- Start Gallery-->
+<div class="gallery">
+  <div class="container">
+    <h2>Our Gallery</h2>
+    <div class="images-box">
+      <img src="/imgs/1.jpg" alt="Image One" /><img src="/imgs/2.jpg" alt="Image Two" /><img src="/imgs/3.jpg"
+        alt="Image Three" /><img src="/imgs/4.jpg" alt="Image Four" /><img src="/imgs/5.jpg" alt="Image Five" /><img
+        src="/imgs/6.jpg" alt="" /><img src="/imgs/7.jpg" alt="" /><img src="/imgs/8.jpg" alt="" /><img
+        src="/imgs/9.jpg" alt="" /><img src="/imgs/10.jpg" alt="" />
+    </div>
+  </div>
+</div>
+<!-- End Gallery-->
+
+<!-- Start timeline-->
+<div class="timeline">
+  <div class="container">
+    <%- include('quotes'); -%>
+  </div>
+</div>
+<!-- End timeline-->
+
+<!-- Start features-->
+<div class="features">
+  <h2>Our features</h2>
+  <div class="container">
+    <div class="feat-box">
+      <img src="/imgs/1.jpg" alt="" />
+      <h4>Relax</h4>
+      <p>
+        We are professional marketeers, we will do anything you imagine in no
+        time.
+      </p>
+    </div>
+    <div class="feat-box">
+      <img src="/imgs/2.jpg" alt="" />
+      <h4>Relax</h4>
+      <p>
+        We are professional marketeers, we will do anything you imagine in no
+        time.
+      </p>
+    </div>
+    <div class="feat-box">
+      <img src="/imgs/3.jpg" alt="" />
+      <h4>Relax</h4>
+      <p>
+        We are professional marketeers, we will do anything you imagine in no
+        time.
+      </p>
+    </div>
+    <div class="feat-box">
+      <img src="/imgs/4.jpg" alt="" />
+      <h4>Relax</h4>
+      <p>
+        We are professional marketeers, we will do anything you imagine in no
+        time.
+      </p>
+    </div>
+    <div class="feat-box">
+      <img src="/imgs/5.jpg" alt="" />
+      <h4>Relax</h4>
+      <p>
+        We are professional marketeers, we will do anything you imagine in no
+        time.
+      </p>
+    </div>
+    <div class="feat-box">
+      <img src="/imgs/6.jpg" alt="" />
+      <h4>Relax</h4>
+      <p>
+        We are professional marketeers, we will do anything you imagine in no
+        time.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!-- End features-->
+
+<!-- Start Testimonials-->
+<div class="testimonials">
+  <div class="container">
+    <h2>Testimonials</h2>
+    <div class="ts-box">
+      <p>Iam very happy with this product, it's amazing.</p>
+      <div class="person-info">
+        <img src="https://placehold.it/70/DDD" alt="" />
+        <h4>Mohamed Emad</h4>
+        <p>CEO At Company</p>
+      </div>
+    </div>
+    <div class="ts-box">
+      <p>Iam very happy with this product, it's amazing.</p>
+      <div class="person-info">
+        <img src="https://placehold.it/70/CCC" alt="" />
+        <h4>Yousef ELsherbiny</h4>
+        <p>CEO At Company</p>
+      </div>
+    </div>
+    <div class="ts-box">
+      <p>Iam very happy with this product, it's amazing.</p>
+      <div class="person-info">
+        <img src="https://placehold.it/70/BBB" alt="" />
+        <h4>Arslan Mohamed</h4>
+        <p>CEO At Company</p>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- End Testimonials-->
+
+<!-- Start contact us-->
+<div class="contact">
+  <div class="overlay"></div>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="">
+      <div class="left">
+        <input type="text" placeholder="Your Name" name="username" autocomplete="off" />
+        <input type="text" placeholder="Your Phone" name="phone" autocomplete="off" />
+        <input type="text" placeholder="Your Email" name="email" autocomplete="off" />
+        <input type="text" placeholder="Subject" name="subject" autocomplete="off" />
+      </div>
+      <div class="right">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <input type="submit" value="send" />
+      </div>
+    </form>
+  </div>
+</div>
+<!-- End contact us-->
+
+<script>
+  // Check if there is local storage color option
+  let mainColors = localStorage.getItem("color_option");
+
+  // Check if main color local storage is not empty
+  if (mainColors !== null) {
+    document.documentElement.style.setProperty("--main-color", mainColors);
+
+    // Remove active class from all colors list-item
+    document.querySelectorAll(".colors-list li").forEach((element) => {
+      element.classList.remove("active");
+
+      // Add active class on element with data-color === local storage item
+      if (element.dataset.color === mainColors) {
+        // Add active class
+        element.classList.add("active");
+      }
+    });
+  }
+
+  // Click on toggle settings gear
+  document.querySelector(".toggle-settings .fa-gear").onclick = function () {
+    // Toggle fa-spin class for rotation on self
+    this.classList.toggle("fa-spin");
+
+    // Toggle open class on main settings box
+    document.querySelector(".settings-box").classList.toggle("open");
+  };
+
+  // Switch colors
+  const colorsLi = document.querySelectorAll(".colors-list li");
+
+  // Loop on all list items
+  colorsLi.forEach((li) => {
+    // Click on every list item
+    li.addEventListener("click", (e) => {
+      // Set color on root
+      document.documentElement.style.setProperty(
+        "--main-color",
+        e.target.dataset.color
+      );
+      // Set color on local storage
+      localStorage.setItem("color_option", e.target.dataset.color);
+
+      handleActive(e);
+    });
+  });
+
+  const darkIcon = document.querySelector(".settings-box .fas");
+  const logoutIcon = document.querySelector(".settings-box .fa-sign-out-alt");
+  const bodyStyle = document.querySelector("body");
+
+  darkMode = () => {
+    if (darkIcon.classList.contains("fa-moon")){
+      localStorage.setItem('dark', true);
+      darkModeChanges();
+    } else if (darkIcon.classList.contains("fa-adjust")){
+      localStorage.setItem('dark', false);
+      defaultModeChanges();
+    }
+  }
+
+  darkModeChanges = () => {
+    bodyStyle.classList.add("dark");
+    darkIcon.classList.add("fa-adjust");
+    darkIcon.classList.remove("fa-moon");
+  }
+
+  defaultModeChanges = () => {
+    bodyStyle.classList.remove("dark");
+    darkIcon.classList.remove("fa-adjust");
+    darkIcon.classList.add("fa-moon");
+  }
+
+  if (localStorage.getItem('dark') === "true") {
+    darkModeChanges();
+  } else{
+    defaultModeChanges();
+  }
+
+  // Random background option
+  let backgroundOption = true;
+
+  // Variable to control the background interval
+  let backgroundInterval;
+
+  // Select landing page element
+  let landingPage = document.querySelector(".landing-page");
+
+  // Get array of images
+  let imgArray = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+
+  // Function to randomize imgs
+  function randomizeImgs() {
+    if (backgroundOption === true) {
+      backgroundInterval = setInterval(() => {
+        // Get random number
+        let randomNumber = Math.floor(Math.random() * imgArray.length);
+
+        // Change background image url
+        landingPage.style.backgroundImage =
+          'url("../imgs/' + imgArray[randomNumber] + '")';
+      }, 3000);
+    }
+  }
+
+  randomizeImgs();
+
+  // Select skills selector
+  let ourSkills = document.querySelector(".skills");
+
+  window.onscroll = function () {
+    // Skills offset top >> ELmesa7a fo2 el skills section
+    let skillsOffsetTop = ourSkills.offsetTop;
+
+    // Skills Outer height >> Mesa7a el skills section 4amla elpadding w elborder
+    let skillsOuterHeight = ourSkills.offsetHeight;
+
+    // Window height >> Mesa7a elheight bta3 elwindow ely fat7ha
+    let windowHeight = this.innerHeight;
+
+    // Window scrollTop >> Elmesa7a fo2 elscroll lma t3ml scroll
+    let windowScrollTop = this.pageYOffset;
+
+    let allSkills = document.querySelectorAll(
+      ".skill-box .skill-progress span"
+    );
+    if (
+      windowScrollTop >
+      skillsOffsetTop + skillsOuterHeight - windowHeight - 200
+    ) {
+      allSkills.forEach((skill) => {
+        skill.style.width = skill.dataset.progress;
+      });
+    } else if (windowScrollTop < 500) {
+      allSkills.forEach((skill) => {
+        skill.style.width = 0;
+      });
+    }
+  };
+
+  // Create popup with the image
+  let ourGallery = document.querySelectorAll(".gallery img");
+
+  ourGallery.forEach((img) => {
+    img.addEventListener("click", (e) => {
+      // Create overlay element
+      let overlay = document.createElement("div");
+
+      // Add class to overlay element
+      overlay.classList.add("popup-overlay");
+
+      // Append overlay element to body
+      document.body.appendChild(overlay);
+
+      // Create popup box
+      let popupBox = document.createElement("div");
+
+      // Add class to overlay box
+      popupBox.classList.add("popup-box");
+
+
+      // Create the image
+      let popupImage = document.createElement("img");
+
+      // Set image src
+      popupImage.src = img.src;
+
+      // Add image to popup box
+      popupBox.appendChild(popupImage);
+
+      // Add popup box to body
+      document.body.appendChild(popupBox);
+
+      // Create the close span
+      let closeButton = document.createElement("span");
+
+      // Create the close button text
+      let CloseButtonText = document.createTextNode("X");
+
+      // Append text to close button
+      closeButton.appendChild(CloseButtonText);
+
+      // Add close to close button
+      closeButton.classList.add("close-button");
+
+      // Add close button to the popup box
+      popupBox.appendChild(closeButton);
+
+      setTimeout(() => {
+        popupBox.style.opacity = 1;
+        overlay.style.opacity = 1;
+      }, 50);
+    });
+  });
+
+  // Close popup
+  document.addEventListener("click", (e) => {
+    if (e.target.className == "close-button" || e.target.className == "popup-overlay") {
+      // Remove the current popup
+      document.querySelector(".popup-box").remove();
+
+      // Remove Overlay
+      document.querySelector(".popup-overlay").remove();
+    }
+  });
+
+  // Select all bullets
+  let allBullets = document.querySelectorAll(".nav-bullets .bullet");
+  let allLinks = document.querySelectorAll(".links li");
+  let allLinksAnchors = document.querySelectorAll(".links a");
+
+  function scrollToSomewhere(elements) {
+    elements.forEach((ele) => {
+      ele.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(e.target.dataset.section).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  }
+
+  scrollToSomewhere(allBullets);
+  scrollToSomewhere(allLinks);
+  scrollToSomewhere(allLinksAnchors);
+
+  // Handle active state
+  function handleActive(ev) {
+    // Remove active class from all children
+    ev.target.parentElement.querySelectorAll(".active").forEach((element) => {
+      element.classList.remove("active");
+    });
+
+    // Add active class on self
+    ev.target.classList.add("active");
+  }
+
+  let bulletsSpan = document.querySelectorAll(".bullets-option span");
+  let bulletsContainer = document.querySelector(".nav-bullets");
+  let bulletsLocalItem = localStorage.getItem("bullets_option");
+
+  if (bulletsLocalItem !== null) {
+    bulletsSpan.forEach((span) => {
+      span.classList.remove("active");
+    });
+
+    if (bulletsLocalItem === "block") {
+      bulletsContainer.style.display = "block";
+      document.querySelector(".bullets-option .yes").classList.add("active");
+    } else {
+      bulletsContainer.style.display = "none";
+      document.querySelector(".bullets-option .no").classList.add("active");
+    }
+  }
+
+  bulletsSpan.forEach((span) => {
+    span.addEventListener("click", (e) => {
+      if (span.dataset.display === "show") {
+        bulletsContainer.style.display = "block";
+        localStorage.setItem("bullets_option", "block");
+      } else {
+        bulletsContainer.style.display = "none";
+        localStorage.setItem("bullets_option", "none");
+      }
+      handleActive(e);
+    });
+  });
+
+  // Toggle menu
+  let toggleBtn = document.querySelector(".toggle-menu");
+  let tLinks = document.querySelector(".links");
+
+  toggleBtn.onclick = function (e) {
+    // Stop propagation on button
+    e.stopPropagation();
+
+    // Toggle class "menu-active" on button
+    this.classList.toggle("menu-active");
+
+    // Toggle class "open" on links
+    tLinks.classList.toggle("open");
+  };
+
+  // Click anywhere outside menu and toggle button
+  document.addEventListener("click", (e) => {
+    if (e.target !== toggleBtn && e.target !== tLinks) {
+      // Check if menu is open
+      if (tLinks.classList.contains("open")) {
+        // Toggle class "menu-active" on button
+        toggleBtn.classList.toggle("menu-active");
+
+        // Toggle class "open" on links
+        tLinks.classList.toggle("open");
+      }
+    }
+  });
+
+  // Stop propagation on menu
+  tLinks.onclick = function (e) {
+    e.stopPropagation();
+  };
+</script>
+
+<%- include('partials/footer'); -%>

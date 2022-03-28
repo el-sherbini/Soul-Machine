@@ -1,0 +1,29 @@
+@import "./mixins";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+    --main-color: #45b3e0;
+    --main-bg: #fff;
+    --section-bg: #eee;
+    --default-font-color: #181a1b;
+}
+
+.dark {
+    --main-bg: #181a1b;
+    --section-bg: #222426;
+    --default-font-color: #e8e6e3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body,
+input {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--main-bg);
+    color: var(--default-font-color);
+}

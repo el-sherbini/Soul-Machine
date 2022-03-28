@@ -1,0 +1,55 @@
+@mixin xs {
+
+    /* Very Small Devices */
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    /* Small Devices => Landscape Phones */
+
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin xsToSm {
+
+    /* All Devices Small Than Tablets */
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin md {
+
+    /* Medium Devices => Tablets */
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin xsToMd {
+
+    /* All Devices Small Than Desktops */
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin lg {
+
+    /* Desktops */
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl {
+
+    /* Large Screens */
+    @media (min-width: 1200px) {
+        @content;
+    }
+}

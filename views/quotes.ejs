@@ -1,0 +1,52 @@
+<div class="timeline-content">
+    <div class="left">
+        <div class="content">
+            <p class="quote"></p>
+            <cite class="author"></cite>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="right">
+        <div class="content">
+            <p class="quote"></p>
+            <cite class="author"></cite>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="right">
+        <div class="content">
+            <p class="quote"></p>
+            <cite class="author"></cite>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="left">
+        <div class="content">
+            <p class="quote"></p>
+            <cite class="author"></cite>
+        </div>
+    </div>
+</div>
+
+<script>
+    getRandomizer = () => Math.floor(Math.random() * (1 + 1643 - 1)) + 1;
+
+    const author = document.querySelectorAll(".author");
+    const quote = document.querySelectorAll(".quote");
+
+    const myFunction = async () => {
+        try {
+            const res = await fetch("https://type.fit/api/quotes")
+                .then(response => { return response.json(); })
+                .then(data => {
+                    for (let i = 0; i < 4; i++) {
+                        author[i].textContent = data[getRandomizer()].author;
+                        quote[i].textContent = data[getRandomizer()].text;
+                    }
+                });
+        } catch (err) {
+            console.log(err);
+        }
+    };
+    myFunction();
+</script>
