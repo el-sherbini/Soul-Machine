@@ -93,19 +93,19 @@ input {
 }
 
 .settings-box .colors-list li:nth-child(2) {
-  background-color: #9AD79E;
+  background-color: #9ad79e;
 }
 
 .settings-box .colors-list li:nth-child(3) {
-  background-color: #45E0C0;
+  background-color: #45e0c0;
 }
 
 .settings-box .colors-list li:nth-child(4) {
-  background-color: #E04565;
+  background-color: #e04565;
 }
 
 .settings-box .colors-list li:nth-child(5) {
-  background-color: #E357BA;
+  background-color: #e357ba;
 }
 
 .settings-box .colors-list li.active {
@@ -429,7 +429,7 @@ input {
           transform: scale(1.5);
 }
 
-.popup-overlay {
+.modal-overlay {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
   left: 0;
@@ -438,11 +438,11 @@ input {
   height: 100%;
   z-index: 1002;
   opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.popup-box {
+.modal-box {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -451,11 +451,11 @@ input {
   z-index: 1003;
   border-radius: 5px;
   opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.popup-box img {
+.modal-box img {
   width: 1080px;
   max-width: 100%;
   border-radius: 5px;
@@ -463,7 +463,7 @@ input {
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.popup-box .close-button {
+.modal-box .close-button {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -482,7 +482,7 @@ input {
   font-family: tahoma;
 }
 
-.popup-box .close-button:hover {
+.modal-box .close-button:hover {
   border-radius: 5px;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -593,11 +593,11 @@ input {
   clear: both;
 }
 
-.features {
+.relax {
   padding: 80px 0;
 }
 
-.features h2 {
+.relax h2 {
   font-weight: bold;
   text-align: center;
   margin: 0 0 60px;
@@ -605,24 +605,25 @@ input {
   font-size: 30px;
 }
 
-.features .feat-box {
+.relax .feat-box {
   width: calc(100% / 3);
   float: left;
   text-align: center;
   margin-top: 40px;
 }
 
-.features .feat-box img {
-  width: 96px;
+.relax .feat-box img {
+  width: 150px;
+  border-radius: 15px;
 }
 
-.features .feat-box h4 {
+.relax .feat-box h4 {
   font-size: 22px;
   margin: 15px 0 40px;
   position: relative;
 }
 
-.features .feat-box h4:before {
+.relax .feat-box h4:before {
   content: "";
   width: 40px;
   height: 4px;
@@ -633,7 +634,7 @@ input {
   bottom: -20px;
 }
 
-.features .feat-box p {
+.relax .feat-box p {
   width: 80%;
   margin: 0 auto;
   line-height: 1.7;
@@ -890,7 +891,7 @@ footer {
     font-weight: bold;
     font-size: 15px;
   }
-  .features .feat-box {
+  .relax .feat-box {
     width: calc(100% / 2);
   }
   .testimonials .ts-box {
@@ -960,7 +961,7 @@ footer {
   .landing-page .introduction-text p {
     font-size: 17px;
   }
-  .features .feat-box {
+  .relax .feat-box {
     width: 100%;
   }
 }

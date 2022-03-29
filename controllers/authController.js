@@ -32,8 +32,7 @@ const handleErrors = (err) => {
 const maxAge = 3 * 24 * 60 * 60;
 
 const createToken = (id) => {
-  return jwt.sign({ id }, "Omda secret", { expiresIn: maxAge * 1000 });
-  // Omda secret must not be publish to anyone
+  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: maxAge * 1000 });
 };
 
 export const signup_get = (req, res) => {
@@ -49,7 +48,6 @@ export const signup_post = async (req, res) => {
 
   try {
     const user = await User.create({ email, pass });
-    // create() is to create an instance of User and save it to database
     const token = createToken(user._id);
     res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
     res.status(201).json({ user: user._id });

@@ -1,192 +1,190 @@
 @include sm {
-    .container {
-        max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
 }
 
 @include md {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 }
 
 @include xsToMd {
-    .header-area {
-        .links {
-            display: none;
-        }
-
-        .toggle-menu {
-            display: inline-block;
-        }
-
-        .links.open {
-            background-color: var(--main-bg);
-            padding: 10px;
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            top: 65px;
-            width: 100%;
-            border-radius: 5px;
-            text-align: left;
-
-            li {
-                margin: 5px;
-                padding: 5px;
-                text-align: center;
-                border-bottom: 1px solid #eee;
-                border-radius: 25px;
-                cursor: pointer;
-                transition: 0.2s ease-in-out;
-
-                &:hover {
-                    background-color: #eee;
-                    border-radius: 5px;
-                }
-
-                a {
-                    color: var(--main-color);
-                    font-weight: bold;
-                    font-size: 15px;
-                }
-            }
-        }
+  .header-area {
+    .links {
+      display: none;
     }
 
-    .features .feat-box {
-        width: calc(100% / 2);
+    .toggle-menu {
+      display: inline-block;
     }
 
-    .testimonials .ts-box {
+    .links.open {
+      background-color: var(--main-bg);
+      padding: 10px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 65px;
+      width: 100%;
+      border-radius: 5px;
+      text-align: left;
+
+      li {
+        margin: 5px;
+        padding: 5px;
         text-align: center;
-        overflow: visible;
+        border-bottom: 1px solid #eee;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
 
-        .person-info {
-            img {
-                float: none;
-                margin-right: 0;
-            }
+        &:hover {
+          background-color: #eee;
+          border-radius: 5px;
         }
+
+        a {
+          color: var(--main-color);
+          font-weight: bold;
+          font-size: 15px;
+        }
+      }
     }
+  }
+
+  .relax .feat-box {
+    width: calc(100% / 2);
+  }
+
+  .testimonials .ts-box {
+    text-align: center;
+    overflow: visible;
+
+    .person-info {
+      img {
+        float: none;
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 @include xsToSm {
-    .about-us {
-        display: block;
+  .about-us {
+    display: block;
+    text-align: center;
+
+    .info-box {
+      padding: 0;
+    }
+
+    .image-box {
+      img {
+        float: none;
+        margin: 30px 20px 0 0;
+      }
+    }
+  }
+
+  .skills {
+    .skill-box {
+      display: block;
+
+      .skill-name {
+        width: 100%;
+        margin-bottom: 15px;
         text-align: center;
+      }
+    }
+  }
 
-        .info-box {
-            padding: 0;
-        }
+  .timeline .timeline-content {
+    .left,
+    .right {
+      width: 100%;
+      margin-bottom: 20px;
 
-        .image-box {
-            img {
-                float: none;
-                margin: 30px 20px 0 0;
-            }
-        }
+      &:before {
+        display: none;
+      }
+
+      .content:before {
+        display: none;
+      }
+    }
+  }
+
+  .testimonials {
+    h2 {
+      text-align: center;
     }
 
-    .skills {
-        .skill-box {
-            display: block;
-
-            .skill-name {
-                width: 100%;
-                margin-bottom: 15px;
-                text-align: center;
-            }
-        }
+    .ts-box {
+      width: 100%;
+      float: none;
+      margin-bottom: 15px;
     }
+  }
 
-    .timeline .timeline-content {
-
-        .left,
-        .right {
-            width: 100%;
-            margin-bottom: 20px;
-
-            &:before {
-                display: none;
-            }
-
-            .content:before {
-                display: none;
-            }
-        }
+  .contact form {
+    .left,
+    .right {
+      float: none;
+      width: 100%;
     }
-
-    .testimonials {
-        h2 {
-            text-align: center;
-        }
-
-        .ts-box {
-            width: 100%;
-            float: none;
-            margin-bottom: 15px;
-        }
-    }
-
-    .contact form {
-
-        .left,
-        .right {
-            float: none;
-            width: 100%;
-        }
-    }
+  }
 }
 
 @include xs {
-    .landing-page {
-        .introduction-text {
-            h1 {
-                font-size: 26px;
-            }
+  .landing-page {
+    .introduction-text {
+      h1 {
+        font-size: 26px;
+      }
 
-            p {
-                font-size: 17px;
-            }
-        }
+      p {
+        font-size: 17px;
+      }
     }
+  }
 
-    .features .feat-box {
-        width: 100%;
-    }
+  .relax .feat-box {
+    width: 100%;
+  }
 }
 
 @include lg {
-    .container {
-        max-width: 960px;
+  .container {
+    max-width: 960px;
+  }
+
+  .header-area {
+    .toggle-menu {
+      display: none;
     }
 
-    .header-area {
-        .toggle-menu {
-            display: none;
+    .links {
+      li {
+        display: inline;
+        margin-left: 10px;
+
+        a {
+          color: white;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--main-color);
+          }
         }
-
-        .links {
-            li {
-                display: inline;
-                margin-left: 10px;
-
-                a {
-                    color: white;
-                    transition: 0.3s ease-in-out;
-
-                    &:hover {
-                        color: var(--main-color);
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 @include xl {
-    .container {
-        max-width: 1140px;
-    }
+  .container {
+    max-width: 1140px;
+  }
 }

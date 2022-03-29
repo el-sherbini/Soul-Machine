@@ -30,8 +30,8 @@
   <div class="bullet" data-section=".timeline">
     <div class="tooltip">Timeline</div>
   </div>
-  <div class="bullet" data-section=".features">
-    <div class="tooltip">Features</div>
+  <div class="bullet" data-section=".relax">
+    <div class="tooltip">Relax</div>
   </div>
   <div class="bullet" data-section=".testimonials">
     <div class="tooltip">Testimonials</div>
@@ -62,8 +62,8 @@
           <li data-section=".timeline">
             <a href="#" data-section=".timeline">Timeline</a>
           </li>
-          <li data-section=".features">
-            <a href="#" data-section=".features">Features</a>
+          <li data-section=".relax">
+            <a href="#" data-section=".relax">Relax</a>
           </li>
           <li data-section=".testimonials">
             <a href="#" data-section=".testimonials">Tetimonials</a>
@@ -143,69 +143,63 @@
 </div>
 <!-- End timeline-->
 
-<!-- Start features-->
-<div class="features">
-  <h2>Our features</h2>
+<!-- Start Relax-->
+<div class="relax">
+  <h2>Just Relax</h2>
   <div class="container">
     <div class="feat-box">
       <img src="/imgs/1.jpg" alt="" />
       <h4>Relax</h4>
       <p>
-        We are professional marketeers, we will do anything you imagine in no
-        time.
+        Tension is who you think you should be. Relaxation is who you are.
       </p>
     </div>
     <div class="feat-box">
       <img src="/imgs/2.jpg" alt="" />
       <h4>Relax</h4>
       <p>
-        We are professional marketeers, we will do anything you imagine in no
-        time.
+        Your mind will answer most questions if you learn to relax and wait for the answer.
       </p>
     </div>
     <div class="feat-box">
       <img src="/imgs/3.jpg" alt="" />
       <h4>Relax</h4>
       <p>
-        We are professional marketeers, we will do anything you imagine in no
-        time.
+        Almost everything will work again if you unplug it for a few minutes...Including you.
       </p>
     </div>
     <div class="feat-box">
       <img src="/imgs/4.jpg" alt="" />
       <h4>Relax</h4>
       <p>
-        We are professional marketeers, we will do anything you imagine in no
-        time.
+        he time to relax is when you don't have time for it.
       </p>
     </div>
     <div class="feat-box">
       <img src="/imgs/5.jpg" alt="" />
       <h4>Relax</h4>
       <p>
-        We are professional marketeers, we will do anything you imagine in no
-        time.
+        Calm mind brings inner strength and self-confidence, so that's very important for good health.
       </p>
     </div>
     <div class="feat-box">
       <img src="/imgs/6.jpg" alt="" />
       <h4>Relax</h4>
       <p>
-        We are professional marketeers, we will do anything you imagine in no
-        time.
+        Sometimes, the most productive thing that you can do is to step outside and do nothing... relax and enjoy nature.
       </p>
     </div>
     <div class="clearfix"></div>
   </div>
 </div>
-<!-- End features-->
+<!-- End Relax-->
 
 <!-- Start Testimonials-->
 <div class="testimonials">
   <div class="container">
     <h2>Testimonials</h2>
     <div class="ts-box">
-      <p>Iam very happy with this product, it's amazing.</p>
+      <p>Iam very happy with this website, it's amazing.</p>
       <div class="person-info">
         <img src="https://placehold.it/70/DDD" alt="" />
         <h4>Mohamed Emad</h4>
@@ -213,7 +207,7 @@
       </div>
     </div>
     <div class="ts-box">
-      <p>Iam very happy with this product, it's amazing.</p>
+      <p>Iam very happy with this website, it's amazing.</p>
       <div class="person-info">
         <img src="https://placehold.it/70/CCC" alt="" />
         <h4>Yousef ELsherbiny</h4>
@@ -221,7 +215,7 @@
       </div>
     </div>
     <div class="ts-box">
-      <p>Iam very happy with this product, it's amazing.</p>
+      <p>Iam very happy with this website, it's amazing.</p>
       <div class="person-info">
         <img src="https://placehold.it/70/BBB" alt="" />
         <h4>Arslan Mohamed</h4>
@@ -395,7 +389,7 @@
     }
   };
 
-  // Create popup with the image
+  // Create modal with the image
   let ourGallery = document.querySelectorAll(".gallery img");
 
   ourGallery.forEach((img) => {
@@ -404,29 +398,29 @@
       let overlay = document.createElement("div");
 
       // Add class to overlay element
-      overlay.classList.add("popup-overlay");
+      overlay.classList.add("modal-overlay");
 
       // Append overlay element to body
       document.body.appendChild(overlay);
 
-      // Create popup box
-      let popupBox = document.createElement("div");
+      // Create modal box
+      let modalBox = document.createElement("div");
 
       // Add class to overlay box
-      popupBox.classList.add("popup-box");
+      modalBox.classList.add("modal-box");
 
 
       // Create the image
-      let popupImage = document.createElement("img");
+      let modalImage = document.createElement("img");
 
       // Set image src
-      popupImage.src = img.src;
+      modalImage.src = img.src;
 
-      // Add image to popup box
-      popupBox.appendChild(popupImage);
+      // Add image to modal box
+      modalBox.appendChild(modalImage);
 
-      // Add popup box to body
-      document.body.appendChild(popupBox);
+      // Add modal box to body
+      document.body.appendChild(modalBox);
 
       // Create the close span
       let closeButton = document.createElement("span");
@@ -440,24 +434,24 @@
       // Add close to close button
       closeButton.classList.add("close-button");
 
-      // Add close button to the popup box
-      popupBox.appendChild(closeButton);
+      // Add close button to the modal box
+      modalBox.appendChild(closeButton);
 
       setTimeout(() => {
-        popupBox.style.opacity = 1;
+        modalBox.style.opacity = 1;
         overlay.style.opacity = 1;
       }, 50);
     });
   });
 
-  // Close popup
+  // Close modal
   document.addEventListener("click", (e) => {
-    if (e.target.className == "close-button" || e.target.className == "popup-overlay") {
-      // Remove the current popup
-      document.querySelector(".popup-box").remove();
+    if (e.target.className == "close-button" || e.target.className == "modal-overlay") {
+      // Remove the current modal
+      document.querySelector(".modal-box").remove();
 
       // Remove Overlay
-      document.querySelector(".popup-overlay").remove();
+      document.querySelector(".modal-overlay").remove();
     }
   });
 
