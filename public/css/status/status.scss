@@ -1,0 +1,15 @@
+@import "../shared-css/shared_css";
+
+.user-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  img {
+    width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+}

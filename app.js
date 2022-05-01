@@ -24,7 +24,7 @@ mongoose
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
-  .then((result) => app.listen(3000))
+  .then((res) => app.listen(5000))
   .catch((err) => console.log(err));
 
 // routes

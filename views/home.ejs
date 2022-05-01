@@ -1,5 +1,12 @@
 <%- include('partials/header'); -%>
 
+<% if (!user) { %>
+  <div class="user-status">
+    <img src="/imgs/1.jpg" alt="">
+    <h2>Your are not logged in, you can login from here <a href="/login">Login</a></h2>
+  </div>
+<% } else { %>
+
 <!-- Start settings box-->
 <div class="settings-box">
   <div class="toggle-settings"><i class="fa fa-gear"></i></div>
@@ -553,3 +560,5 @@
 </script>
 
 <%- include('partials/footer'); -%>
+
+<% } %>
