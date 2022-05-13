@@ -34,8 +34,8 @@
   <div class="bullet" data-section=".gallery">
     <div class="tooltip">Our Gallery</div>
   </div>
-  <div class="bullet" data-section=".timeline">
-    <div class="tooltip">Timeline</div>
+  <div class="bullet" data-section=".">
+    <div class="tooltip">quotes</div>
   </div>
   <div class="bullet" data-section=".relax">
     <div class="tooltip">Relax</div>
@@ -66,8 +66,8 @@
           <li data-section=".gallery">
             <a href="#" data-section=".gallery">Gallery</a>
           </li>
-          <li data-section=".timeline">
-            <a href="#" data-section=".timeline">Timeline</a>
+          <li data-section=".quotes">
+            <a href="#" data-section=".quotes">Quotes</a>
           </li>
           <li data-section=".relax">
             <a href="#" data-section=".relax">Relax</a>
@@ -142,13 +142,13 @@
 </div>
 <!-- End Gallery-->
 
-<!-- Start timeline-->
-<div class="timeline">
+<!-- Start quotes-->
+<div class="quotes">
   <div class="container">
     <%- include('quotes'); -%>
   </div>
 </div>
-<!-- End timeline-->
+<!-- End quotes-->
 
 <!-- Start Relax-->
 <div class="relax">
@@ -367,16 +367,9 @@
   let ourSkills = document.querySelector(".skills");
 
   window.onscroll = function () {
-    // Skills offset top >> ELmesa7a fo2 el skills section
     let skillsOffsetTop = ourSkills.offsetTop;
-
-    // Skills Outer height >> Mesa7a el skills section 4amla elpadding w elborder
     let skillsOuterHeight = ourSkills.offsetHeight;
-
-    // Window height >> Mesa7a elheight bta3 elwindow ely fat7ha
     let windowHeight = this.innerHeight;
-
-    // Window scrollTop >> Elmesa7a fo2 elscroll lma t3ml scroll
     let windowScrollTop = this.pageYOffset;
 
     let allSkills = document.querySelectorAll(
