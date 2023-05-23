@@ -1,7 +1,6 @@
 # Soul-Machine
 
 > Soul Machine is a web app with two pages [Authentication page (SignUp - SignIn) and Landing Page].
-> Live demo [_here_](https://bre.is/kGYry2RH).
 
 ## Installation
 
